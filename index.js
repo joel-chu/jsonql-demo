@@ -3,7 +3,7 @@ const jsonqlKoa = require('jsonql-koa')
 const { join } = require('path')
 
 
-
+// the bare minimum setup 
 server({
   webroot: [
     join(__dirname, 'node_modules'),
