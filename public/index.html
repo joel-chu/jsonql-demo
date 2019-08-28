@@ -7,6 +7,79 @@
   </head>
   <body>
 
+    <div class="container">
+      <div class="notification">
+        This is <strong>jsonql</strong> demo. <span id="hello">loading ...</span>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Query
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                When you click <b>Try it</b> button bellow. It will send a <b>query.getSomething</b>
+                to the server.
+                <br />
+                And here is the result: <br />
+                <div id="result1" class="has-text-grey">waiting ...</div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a onclick="getSomething()" href="javascript:void(0);" class="card-footer-item">Try it</a>
+              <!-- a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a -->
+            </footer>
+          </div>
+        </div><!-- end column 1 -->
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Mutation
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                This will show you a mutation example.
+                <p>First put a text in the first box</p>
+                <label for="payload">Payload</label>
+                <input name="payload" type="text" id="payload" />
+                <p>Then a number into the input below</p>
+                <label for="condition">Condition</label>
+                <input name="condition" type="number" id="condition" />
+                <br />
+                And here is your answer: <br />
+                <div id="result2" class="has-text-grey">waiting ...</div>
+                <p class="has-background-warning">
+                  If you put number that is less than 1 (just try 0).
+                  Check your console for error message.
+                </p>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="javascript:void(0)" onclick="saveSomething()" class="card-footer-item">Try it</a>
+            </footer>
+          </div>
+
+        </div><!-- end column 2 -->
+      </div>
+
+    </div>
 
     <script type="text/javascript" src="jsonql-client/dist/jsonql-client.umd.js"></script>
     <script type="text/javascript" src="app.js"></script>
