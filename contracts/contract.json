@@ -1,0 +1,43 @@
+{
+  "query": {
+    "getSomething": {
+      "file": "/home/joel/projects/open-source/jsonql-demo/resolvers/query/get-something.js",
+      "description": "No param required",
+      "params": [],
+      "returns": [
+        {
+          "type": [
+            "string"
+          ],
+          "description": "a message"
+        }
+      ]
+    }
+  },
+  "mutation": {
+    "saveSomething": {
+      "file": "/home/joel/projects/open-source/jsonql-demo/resolvers/mutation/save-something.js",
+      "description": "demo the mutation interface",
+      "params": [
+        {
+          "type": [
+            "any"
+          ],
+          "name": "payload",
+          "description": "what to save"
+        },
+        {
+          "type": [
+            "number"
+          ],
+          "name": "condition",
+          "description": "just a phony condition to demo the validation"
+        }
+      ],
+      "returns": false
+    }
+  },
+  "auth": {},
+  "timestamp": 1566997303965,
+  "sourceType": "script"
+}

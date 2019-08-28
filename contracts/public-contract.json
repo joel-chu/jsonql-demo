@@ -1,0 +1,50 @@
+{
+  "query": {
+    "helloWorld": {
+      "description": "This is the stock resolver for testing purpose",
+      "params": [],
+      "returns": [
+        {
+          "type": "string",
+          "description": "stock message"
+        }
+      ]
+    },
+    "getSomething": {
+      "description": "No param required",
+      "params": [],
+      "returns": [
+        {
+          "type": [
+            "string"
+          ],
+          "description": "a message"
+        }
+      ]
+    }
+  },
+  "mutation": {
+    "saveSomething": {
+      "description": "demo the mutation interface",
+      "params": [
+        {
+          "type": [
+            "any"
+          ],
+          "name": "payload",
+          "description": "what to save"
+        },
+        {
+          "type": [
+            "number"
+          ],
+          "name": "condition",
+          "description": "just a phony condition to demo the validation"
+        }
+      ],
+      "returns": false
+    }
+  },
+  "auth": {},
+  "timestamp": 1566997303975
+}
